@@ -1,0 +1,348 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    /* background: rgb(221, 149, 221); */
+    align-items: center;
+ justify-content: center;
+ padding: 5px;
+ top: 0px;
+ /* position: sticky; */
+ cursor: pointer;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/beach-gd5a3b8102_1280.jpg');
+    background-size: cover;
+    background-blend-mode:lighten;
+    }
+.logo img{
+    width: 33%;
+    border-radius: 80px;
+    border: 10px solid white;
+
+}
+
+.navbar-right {
+    width: 50%;
+    /* background: rgb(170, 147, 147); */
+    text-align: right;/*shifts items to right*/
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    
+}
+.logo{
+    width: 20%;
+    display: flex;/*we are using flex because with this justify content doesn't works*/
+    justify-content: center;/*make it in the center of the area*/
+    align-items: center;/*given equal margins from top and center*/
+    /* background: #f5cbcb; */
+}
+.nav-list{
+width: 50%;
+display: flex;
+list-style: none;
+text-decoration: none;
+/* background: #8c958b; */
+}
+.nav-list li{
+    display: flex;
+    padding: 26px 30px;
+    justify-content: center;
+    align-items: center;
+    /* background: #65648f; */
+    
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    /* background: #96e6c9; */
+    
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    /* background: #96e6c9; */
+    
+}
+
+#search{
+    padding: 6px;
+    font-size:10px ;
+    border:2px solid rgb(78, 63, 63) ;
+    border-radius: 10px;
+    /* background: #868887; */
+}
+.navbar-right button{
+    padding: 6px;
+    font-size:10px ;
+    border:2px solid rgb(74, 69, 69);
+    border-radius: 10px;/* background: #e6ebe9; */
+}
+/*first part of the video*/
+.firstsection{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* max-width: 50%;
+    margin: auto;
+    height:80%; */
+    padding: 60px;
+}
+.firsthalf{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+.big-text{
+   font-size: 3rem;
+   font-family: 'Ubuntu', sans-serif;
+}
+.small-text {
+    margin-right: 200px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.secondhalf img{
+ width: 100%;
+border: 4px solid white;   
+border-radius: 300px;
+display: block;
+margin: auto;
+}
+.secondhalf{
+    width: 30%;
+    
+}
+.buttons{
+  
+     margin-top: 5px;
+     align-self: flex-start;
+    
+}
+
+.buttons>.btn{
+    padding: 5px;
+    border-radius: 5px;
+    background:none; 
+    color: white;
+    border:1px solid white;
+}
+/*third part*/
+.secondsection{
+    padding: 100px;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.firstdivision{
+    width: 70%;
+    justify-content:;
+    align-items: center;
+}
+.firstdivision>p{
+    padding-bottom: 23px;
+    width: 100%;
+}
+.seconddivision{
+    width: 50%;
+    margin: auto;
+}
+.seconddivision>img{
+    height: 200px;
+    border: 2px solid green;
+    border-radius: 10px; 
+    
+    
+
+}
+.thirdsection{
+    padding: 100px;
+}
+.third-box{
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+    margin: auto;
+}
+.third-firstdivision{
+    width: 70%;
+    margin-right: 0px;
+    align-items: center;
+
+}
+.third-firstdivision>p{
+    padding-bottom: 23px;
+    width: 100%;
+}
+.fourthsection{
+    padding: 100px;
+}
+.form{
+    display: flex;
+   flex-direction: column;
+   width:350px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+
+}
+.input-text{
+    padding: 3px;
+    margin: 9px 0px 15px 0px;
+    border: 1px solid black;
+    width:350px;
+    border-radius: 3px;
+
+}
+.contactform{
+    background-color: #faf5f5;
+}
+.contactform>.form>button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 54px;
+}
+.form>h2{
+    margin: 30px 0px 20px 0px
+}
+footer{
+    background-color: #d5a170;
+    text-align: center;
+    padding: 50px;
+
+}
+.thirdsection>.third-box>.seconddivision>.man-img{
+    width: 50%;
+    margin: auto; 
+    padding: 10px;
+    display: flex;
+     flex-direction: row-reverse;
+}
+@media only screen and (max-width:807px)
+{
+    .navbar{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        top: 0px;
+        /* position: stiky; */
+        cursor: pointer;
+        height: 377px;
+    }
+    .nav-list{
+        width: 30%;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding-inline: 7px;
+    flex-direction: column;
+    }
+    .nav-list li{
+        padding: 5px 5px;
+        display: flex;
+        flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .navbar-right {
+        width: 50%;
+        text-align: right;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-direction: column;
+        padding: -2px;
+        gap: 5px;
+    }
+    .logo {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: #f5cbcb; */
+    }
+    .small-text {
+        margin-right: auto;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .third-box {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 3px;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .third-firstdivision {
+        width: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .seconddivision {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -154px;
+    flex-direction: column;
+    
+    padding: 0px;
+}
+.box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.firstdivision {
+    width: auto;}
+    .fourthsection {
+        padding: 35px;
+    }
+    
+    .thirdsection {
+        padding: 55px;
+    }    
+}
