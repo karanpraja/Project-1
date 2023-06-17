@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*motst imporatant*/ height: 100vh;/*this is important at it will make that clock center by giving it gap*/
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+    overflow: hidden;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    
+}
+.clock{
+    display: flex;
+    gap: 5px;
+ 
+}
+.clock div{
+    position: relative;
+    display: column;
+}
+/* .clock div{
+    display: flex;
+    position: relative;
+    background-color: green;
+} */
+.clock span{
+    width:100px ;
+    height: 100px;
+    
+    opacity: 0.8;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size:auto; */
+    text-shadow: 2px 2px 4px rgba(0, 0,0, 0.3);
+    background: rgb(159, 240, 249);
+    
+}
+.clock .text{
+    height: 30px;
+    font-size: 1rem;
+    text-transform:uppercase;
+    list-style: none;
+    background:rgb(37, 141, 186);
+    
+    
+
+}
+.clock .ampm{
+    border: 0px;
+    position: absolute;
+    font-size:20px ;
+    opacity: ;
+    /* background: black; */
+    background-color: rgb(17, 221, 244);
+    /*added comments*/
+}
+#ampm{
+    opacity: 0;
+}
+#hour{
+font-size: 2rem;
+}
+#minutes{
+    font-size: 2rem;
+}
+#seconds{
+    font-size: 2rem;
+}
